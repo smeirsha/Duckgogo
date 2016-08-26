@@ -307,10 +307,6 @@
 		83F32269149290EF00A61BC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F32268149290EF00A61BC5 /* main.m */; };
 		83F3226D149290EF00A61BC5 /* DDGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F3226C149290EF00A61BC5 /* DDGAppDelegate.m */; };
 		83F3229E1492EE1B00A61BC5 /* DDGSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F3229C1492EE1B00A61BC5 /* DDGSearchController.m */; };
-		8409F5EE1B5E917E001F897F /* proximanova-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8409F5EA1B5E917E001F897F /* proximanova-bold.otf */; };
-		8409F5EF1B5E917E001F897F /* proximanova-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8409F5EB1B5E917E001F897F /* proximanova-light.otf */; };
-		8409F5F01B5E917E001F897F /* proximanova-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8409F5EC1B5E917E001F897F /* proximanova-regular.otf */; };
-		8409F5F11B5E917E001F897F /* proximanova-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8409F5ED1B5E917E001F897F /* proximanova-semibold.otf */; };
 		8410AD551BB7353500CC83DB /* DDGImageActivityItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410AD541BB7353500CC83DB /* DDGImageActivityItemProvider.m */; };
 		84341F131C26B7E2008A7E2A /* DDGToolbarAndNavigationBarAutohider.m in Sources */ = {isa = PBXBuildFile; fileRef = 84341F121C26B7E2008A7E2A /* DDGToolbarAndNavigationBarAutohider.m */; };
 		845993321B4BD41B006F2CE7 /* DDGProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 845993311B4BD41B006F2CE7 /* DDGProgressBar.m */; };
@@ -1883,7 +1879,7 @@
 		83F3224F149290EF00A61BC5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					486E7C831C5F051F00287A35 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1956,7 +1952,6 @@
 				838E906A149A76D400C11E41 /* Localizable.strings in Resources */,
 				4C1FD7EE1548FF65006B2511 /* arrowRight18x18.png in Resources */,
 				4C1FD7F21548FF65006B2511 /* chevron15x27.png in Resources */,
-				8409F5F11B5E917E001F897F /* proximanova-semibold.otf in Resources */,
 				4C1FD7FE1548FF65006B2511 /* search_field.png in Resources */,
 				4C1FD7FF1548FF65006B2511 /* search_field@2x.png in Resources */,
 				4C1FD8021548FF65006B2511 /* spacer8x16.png in Resources */,
@@ -1980,7 +1975,6 @@
 				4CA9C48A15CC82A3001F3231 /* table_view_shadow_bottom@2x.png in Resources */,
 				4CA9C48B15CC82A3001F3231 /* table_view_shadow_bottom.png in Resources */,
 				4C02E2E11623C9F70010F06C /* bg_divider.png in Resources */,
-				8409F5EF1B5E917E001F897F /* proximanova-light.otf in Resources */,
 				4C02E2E21623C9F70010F06C /* bg_divider@2x.png in Resources */,
 				83BAB47E1636DB6600DF1A6D /* spacer64x64.png in Resources */,
 				83CD213016374049000220B0 /* section_tile.png in Resources */,
@@ -2008,7 +2002,6 @@
 				4EC8D8341BB4A8D000BE8903 /* DuckDuckGo.storyboard in Resources */,
 				4C1D95E6163F3D2100F7A0B9 /* bg_menu-items@2x.png in Resources */,
 				4C1D95E7163F3D2100F7A0B9 /* bg_history-items.png in Resources */,
-				8409F5F01B5E917E001F897F /* proximanova-regular.otf in Resources */,
 				4C1D95E8163F3D2100F7A0B9 /* bg_home-bar@2x.png in Resources */,
 				4C1D95E9163F3D2100F7A0B9 /* bg_home-bar.png in Resources */,
 				4C1D95EA163F3D2100F7A0B9 /* bg_menu-items.png in Resources */,
@@ -2027,7 +2020,6 @@
 				4EC8D84F1BB4A91400BE8903 /* HomeSwipeView.xib in Resources */,
 				5B88DBAF16DB7BA7007A935D /* swipe-open-in-safari.png in Resources */,
 				5B88DBB016DB7BA7007A935D /* swipe-open-in-safari@2x.png in Resources */,
-				8409F5EE1B5E917E001F897F /* proximanova-bold.otf in Resources */,
 				5B88DBB116DB7BA7007A935D /* swipe-save.png in Resources */,
 				5B88DBB216DB7BA7007A935D /* swipe-save@2x.png in Resources */,
 				5B88DBB316DB7BA7007A935D /* swipe-share.png in Resources */,
@@ -2891,6 +2883,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duckduckgo.mobile.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
@@ -2937,6 +2930,7 @@
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -3021,6 +3015,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duckduckgo.mobile.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
@@ -3056,6 +3051,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duckduckgo.mobile.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
@@ -3123,6 +3119,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duckduckgo.mobile.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
